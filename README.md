@@ -1,4 +1,4 @@
-# Various datasructures in ruby
+# Some datasructures implemented in ruby
 
 ### LinkedList
 
