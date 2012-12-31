@@ -16,7 +16,7 @@ puts "Linked list is "
 linked_list.print_list
 
 # Reversing the LinkedList, this operation overwrites the original LinkedList
-linked_list.reverse
+linked_list.reverse!
 puts ""
 puts "After reversing, Linked list is "
 linked_list.print_list

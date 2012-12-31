@@ -35,7 +35,7 @@ class LinkedList
     end
   end
 
-  def reverse
+  def reverse!
     if self.first == nil
       return nil
     else
@@ -53,10 +53,9 @@ class LinkedList
     end
   end
 
-  def nth_from_last(n)
+  def nth_from_last nth
     if self.first == nil
-      puts "Not possible to extract #{n}th element from last"
-      return nil
+      return "not possible"
     else
       # boolean flag to instruct the second loop node to start traversing
       traverse = false
@@ -70,7 +69,7 @@ class LinkedList
       # keep traversing till the first loop node reached the end of LL
       while loop_node_1.next != nil
         node_counter = node_counter+1
-        if node_counter == n
+        if node_counter == nth
           # start moving the second loop node 
           traverse = true
         end
@@ -80,15 +79,14 @@ class LinkedList
         end
       end
 
-      if traverse
+      if node_counter == (nth-1) || traverse
         loop_node_2.data
       else
-        puts "Not possible to extract #{n}th element from last"
-        nil
+        return "not possible"
       end
     end
-  end
 
+  end
 end
 
 
