@@ -6,11 +6,13 @@
 
     * adds the given element to the last of the LinkedList
 
+
 * LinkedList#reverse!
 
     * reverses the LinkedList
 
+
 * LinkedList#nth_from_last
 
-    * extracts nth element from the last in the LinkedList
+    * extracts nth element from last in the LinkedList
 
